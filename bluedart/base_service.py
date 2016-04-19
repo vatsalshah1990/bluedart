@@ -87,7 +87,6 @@ class BlueDartBaseService(object):
 
         self.client = Client(wsdl_url, plugins=[GeneralSudsPlugin()])
         # self.client.options.cache.clear()  # Clear the cache, then re-init client when changing wsdl file.
-
         self._prepare_wsdl_objects()
 
     def _prepare_wsdl_objects(self):
@@ -99,7 +98,7 @@ class BlueDartBaseService(object):
 
         pass
 
-    def __check_response_for_fedex_error(self):
+    def __check_response_for_bluedart_error(self):
         """
         This checks the response for general bluedart errors that aren't related
         to any one WSDL.
@@ -172,7 +171,7 @@ class BlueDartBaseService(object):
 
         # Check the response for general bluedart errors/failures that aren't
         # specific to any given WSDL/request.
-        self.__check_response_for_fedex_error()
+        self.__check_response_for_bluedart_error()
 
         # Check the response for errors specific to the particular request.
         # This method can be overridden by a method on the child class object.
