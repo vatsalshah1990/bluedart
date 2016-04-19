@@ -2,7 +2,7 @@
 from distutils.core import setup
 import bluedart
 
-LONG_DESCRIPTION = open('README.rst').read()
+LONG_DESCRIPTION = open('README.md').read()
 
 CLASSIFIERS = [
     'Development Status :: 5 - Production/Stable',
