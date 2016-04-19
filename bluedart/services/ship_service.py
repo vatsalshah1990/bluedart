@@ -102,4 +102,4 @@ class BlueDartCancelShipmentRequest(BlueDartBaseService):
         """
 
         # Fire off the query.
-        return self.client.service.GenerateWayBill(self.Request, self.Profile)
+        return self.client.service.CancelWaybill(self.Request, self.Profile)
