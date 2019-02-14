@@ -14,9 +14,10 @@ class BlueDartPickupRequest(BlueDartBaseService):
 
         self.profile_obj = profile_obj
 
-        wsdl_url = "http://netconnect.bluedart.com/Ver1.7/ShippingAPI/Pickup/PickupRegistrationService.svc?wsdl"
+        wsdl_url = "http://netconnect.bluedart.com/Ver1.8/ShippingAPI/Pickup/PickupRegistrationService.svc?wsdl"
         if self.profile_obj.use_test_server:
-            wsdl_url = "http://netconnect.bluedart.com/Demo/ShippingAPI/Pickup/PickupRegistrationService.svc?wsdl"
+            wsdl_url = "http://netconnect.bluedart.com/Ver1.8/Demo/ShippingAPI/Pickup/PickupRegistrationService.svc?" \
+                       "wsdl"
 
         self.request = None
         self.profile = None
