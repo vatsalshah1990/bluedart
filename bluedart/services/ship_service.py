@@ -14,9 +14,9 @@ class BlueDartProcessShipmentRequest(BlueDartBaseService):
 
         self.profile_obj = profile_obj
 
-        wsdl_url = "http://netconnect.bluedart.com/Ver1.7/ShippingAPI/WayBill/WayBillGeneration.svc?wsdl"
+        wsdl_url = "http://netconnect.bluedart.com/Ver1.9/ShippingAPI/WayBill/WayBillGeneration.svc?wsdl"
         if self.profile_obj.use_test_server:
-            wsdl_url = "http://netconnect.bluedart.com/Demo/ShippingAPI/Waybill/WayBillGeneration.svc?wsdl"
+            wsdl_url = "http://netconnect.bluedart.com/Ver1.9/Demo/ShippingAPI/Waybill/WayBillGeneration.svc?wsdl"
 
         self.Request = None
         self.Profile = None
@@ -67,9 +67,9 @@ class BlueDartCancelShipmentRequest(BlueDartBaseService):
 
         self.profile_obj = profile_obj
 
-        wsdl_url = "http://netconnect.bluedart.com/Ver1.7/ShippingAPI/WayBill/WayBillGeneration.svc?wsdl"
+        wsdl_url = "http://netconnect.bluedart.com/Ver1.9/ShippingAPI/WayBill/WayBillGeneration.svc?wsdl"
         if self.profile_obj.use_test_server:
-            wsdl_url = "http://netconnect.bluedart.com/Demo/ShippingAPI/Waybill/WayBillGeneration.svc?wsdl"
+            wsdl_url = "http://netconnect.bluedart.com/Ver1.9/Demo/ShippingAPI/Waybill/WayBillGeneration.svc?wsdl"
 
         self.Request = None
         self.Profile = None
